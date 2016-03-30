@@ -1,0 +1,29 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+#music {
+  border: 2px solid #333;
+  margin: 1%;
+  height: 180px;
+  padding: 1%;
+  background-color: #3a4625;
+  color: white;
+  border-radius: 3px;
+  @include span-columns(2);
+  text-align: center;
+}
+#adding {
+  @include span-columns(6);
+}
+#deleting {
+  @include span-columns(6);
+}
+html {
+  background-color: #7a924d;
+  @include outer-container;
+  font-family: $helvetica;
+}
+h1 {
+  text-align: center;
+  font-size: 65px;
+  color: #ffffff;
+}
