@@ -1,8 +1,8 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
-#music {
+.music {
   border: 2px solid #333;
-  margin: 1%;
+  margin: 1.6%;
   height: 180px;
   padding: 1%;
   background-color: #3a4625;
@@ -11,19 +11,32 @@
   @include span-columns(2);
   text-align: center;
 }
-#adding {
+.drops {
   @include span-columns(6);
+  border: 2px solid #333;
+  border-radius: 3px;
+  text-align: center;
+  height: 210px;
+  font-size: 40px;
+  color: rgba(#ffffff, 0.52);
+  padding-top: 2%;
+}
+#adding {
+  background-color: #14711d;
 }
 #deleting {
-  @include span-columns(6);
+  background-color: #a4250e;
 }
 html {
   background-color: #7a924d;
-  @include outer-container;
   font-family: $helvetica;
+}
+body {
+  @include outer-container;
 }
 h1 {
   text-align: center;
   font-size: 65px;
   color: #ffffff;
+  margin-bottom: 2%;
 }

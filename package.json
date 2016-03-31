@@ -1,13 +1,14 @@
 {
-  "name": "categoriescart",
+  "name": "listenup",
   "version": "1.0.0",
-  "description": "Using jQuery for Sorting Categories with a Cart Function",
+  "description": "Using jQuery for Sorting Categories",
   "main": "gulpfile.js",
   "dependencies": {
     "browserify": "^13.0.0",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-sass": "^2.2.0",
-    "underscore": "^1.8.3"
+    "sass": "^0.5.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kholliday88/CategoriesCart.git"
+    "url": "git+https://github.com/kholliday88/ListenUp.git"
   },
   "author": "Kyle Holliday",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kholliday88/CategoriesCart/issues"
+    "url": "https://github.com/kholliday88/ListenUp/issues"
   },
-  "homepage": "https://github.com/kholliday88/CategoriesCart#readme"
+  "homepage": "https://github.com/kholliday88/ListenUp#readme"
 }
