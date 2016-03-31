@@ -24,7 +24,9 @@ window.addEventListener('load', function() {
     $('#results div').draggable({
       appendTo: "body",
       helper: "clone"
+        // });
+        // $('#adding div').droppable({
+        //   appendTo: "#adding"
     });
-
   });
 });
