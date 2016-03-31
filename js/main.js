@@ -5,16 +5,26 @@ window.addEventListener('load', function() {
 
   for (var i = 0; i < data.length; i++) {
     var artists = musicTemplate({
+      id: data[i].id,
       name: data[i].name,
       type: data[i].type,
       location: data[i].location,
     });
-    console.log(artists);
 
-    var music = document.createElement('div');
-    music.innerHTML = artists;
+    var create = document.createElement('div');
+    create.classList.add('data');
+    //Set the ID
+    create.setAttribute('id', 'type-' + data[i].id);
+    create.innerHTML = artists;
     var parent = document.getElementById('results');
-    parent.appendChild(music);
-    console.log(music);
+    parent.appendChild(create);
   }
+
+  $(function() {
+    $('#results div').draggable({
+      appendTo: "body",
+      helper: "clone"
+    });
+
+  });
 });
